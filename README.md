@@ -1,5 +1,5 @@
-# portforio
+# portfolio
 This is Reo Yoshioka portfolio website
 
 ## Design file
-portfolio.sketchl
+portfolio.sketch
