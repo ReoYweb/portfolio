@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1141px" height="499px" viewBox="0 0 1141 499" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>title</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="home" transform="translate(-388.000000, -303.000000)" fill="#1A1A1A">
+            <g id="hero" transform="translate(-98.000000, -140.000000)">
+                <g id="title" transform="translate(481.000000, 442.000000)">
+                    <g id="maintitle" transform="translate(934.000000, 0.000000)">
+                        <text id="デ-ザ-イ-ン-が-人-生-を-創-っ" font-family="NotoSansCJKjp-Regular, Noto Sans CJK JP" font-size="15.917235" font-weight="normal" line-spacing="37.8">
+                            <tspan x="8.7128835" y="36.9">デ</tspan>
+                            <tspan x="8.7128835" y="74.7">ザ</tspan>
+                            <tspan x="8.7128835" y="112.5">イ</tspan>
+                            <tspan x="8.7128835" y="150.3">ン</tspan>
+                            <tspan x="8.7128835" y="188.1">が</tspan>
+                            <tspan x="8.7128835" y="225.9">人</tspan>
+                            <tspan x="8.7128835" y="263.7">生</tspan>
+                            <tspan x="8.7128835" y="301.5">を</tspan>
+                            <tspan x="8.7128835" y="339.3">創</tspan>
+                            <tspan x="8.7128835" y="377.1">っ</tspan>
+                            <tspan x="8.7128835" y="414.9">て</tspan>
+                            <tspan x="8.7128835" y="452.7">い</tspan>
+                            <tspan x="8.7128835" y="490.5">る</tspan>
+                        </text>
+                        <text id="○-△-□" transform="translate(66.525000, 42.025000) rotate(-270.000000) translate(-66.525000, -42.025000) " font-family="NotoSansCJKjp-DemiLight, Noto Sans CJK JP" font-size="24.0069614" font-weight="300">
+                            <tspan x="25.025" y="52.025">○ </tspan>
+                            <tspan x="54.3855138" y="52.025" font-family="NotoSansCJKjp-Bold, Noto Sans CJK JP" font-weight="bold">△</tspan>
+                            <tspan x="78.3924753" y="52.025"> □</tspan>
+                        </text>
+                    </g>
+                    <g id="maintext" transform="translate(35.000000, 184.000000)" font-family="OpenSans-Bold, Open Sans" font-size="101.53836" font-weight="bold">
+                        <text id="Design-create-my-lif" transform="translate(558.000000, 69.500000) rotate(-360.000000) translate(-558.000000, -69.500000) ">
+                            <tspan x="1.13686838e-13" y="109">Design create my   life</tspan>
+                        </text>
+                    </g>
+                    <text id="1988-2019" transform="translate(11.000000, 292.500000) rotate(-270.000000) translate(-11.000000, -292.500000) " font-family="NotoSansCJKjp-Light, Noto Sans CJK JP" font-size="14.091" font-weight="300" letter-spacing="10.2795">
+                        <tspan x="-63" y="298">1988-201</tspan>
+                        <tspan x="76.6990977" y="298">9</tspan>
+                    </text>
+                    <text id="Based-on-Vancouver-a" font-family="NotoSansCJKjp-Light, Noto Sans CJK JP" font-size="20.328" font-weight="300" letter-spacing="8.92868099">
+                        <tspan x="42" y="359">Based on Vancouver and Toky</tspan>
+                        <tspan x="556.384347" y="359" letter-spacing="8.44864497">o</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
