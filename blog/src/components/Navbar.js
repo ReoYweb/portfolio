@@ -46,20 +46,26 @@ const Navbar = class extends React.Component {
             </Link>
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={` burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
-              <span />
-              <span />
-              <span />
+              <span className="white" />
+              <span className="black" />
+              <span className="white" />
+              <span className="black" />
+              <span className="black" />
+              <span className="black" />
+              <span className="white" />
+              <span className="black" />
+              <span className="white" />
             </div>
           </div>
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="nav">
               <Link className="navbar-item" to="/about">
                 About
               </Link>

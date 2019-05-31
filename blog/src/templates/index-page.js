@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 
 import top from '../img/title.svg';
+import scroll from '../img/scroll.svg';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
@@ -38,6 +39,10 @@ export const IndexPageTemplate = ({
           flexDirection: 'column'
         }}
       >
+        <Link to="/">
+          <img src={scroll} className="scroll" />
+        </Link>
+
         <h1 className="heading">{title}</h1>
         <h3 className="sub">{subheading}</h3>
       </div>

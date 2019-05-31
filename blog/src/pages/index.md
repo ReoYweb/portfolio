@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Design create my life
+title: Hello
 image: /img/title.svg
-heading: Design create my life
-subheading: Based on Vancouver and Tokyo
+heading: Hello
+subheading: Hello, I am Reo Yoshioka and UI/UX designer.
 mainpitch:
   title: Why Kaldi
   description: >
