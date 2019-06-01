@@ -1,33 +1,20 @@
 ---
 templateKey: index-page
-<<<<<<< HEAD
 title: Hello
 image: /img/title.svg
-heading: Hello
-subheading: Hello, I am Reo Yoshioka and UI/UX designer.
-=======
-title: Design create my life
-image: /img/home-jumbotron.jpg
-heading: Design create my life
-subheading: Support sustainable farming while enjoying a cup
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
+heading:
+subheading: Hello, I am Reo Yoshioka and UI/UX designer. I design and build cool design like below.
 mainpitch:
-  title: Why Kaldi
+  title: Client works
   description: >
     Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  java’s origin
 intro:
   blurbs:
     - image: /img/coffee.png
       text: >
-<<<<<<< HEAD
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
         variety of coffee beans grown with great care for the environment and
@@ -53,18 +40,6 @@ intro:
         space where you can hang out with fellow coffee lovers and learn about
         coffee making techniques. All of the artwork on display there is for
         sale. The full price you pay goes to the artist.
-=======
-        We sell green
-    - image: /img/coffee-gear.png
-      text: >
-        We offer
-    - image: /img/tutorials.png
-      text: >
-        Love
-    - image: /img/meeting-space.png
-      text: >
-        We believe that
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
   heading: What we offer
   description: >
     Kaldi is the ultimate spot for coffee lovers who want to learn about their

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Open+Sans:400,800&display=swap');
+
 html,
 body,
 div,
@@ -103,6 +105,8 @@ section {
 body {
   line-height: 1;
   padding: 4%;
+  font-family: 'Open Sans', sans-serif;
+  // font-family: 'Noto Sans JP', sans-serif;
 }
 ol,
 ul {

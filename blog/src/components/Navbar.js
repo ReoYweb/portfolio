@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-<<<<<<< HEAD
 // import github from '../img/github-icon.svg';
-=======
-import github from '../img/github-icon.svg';
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
 import logo from '../img/logo.svg';
 
 const Navbar = class extends React.Component {
@@ -43,9 +39,9 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
+        <div className="cursor cursor-follower" />
         <div className="container">
           <div className="navbar-brand">
-<<<<<<< HEAD
             <Link to="/" className="navbar-itee" title="Logo">
               <img src={logo} alt="R" className="logo" />
             </Link>
@@ -55,44 +51,24 @@ const Navbar = class extends React.Component {
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
-              <span className="white" />
-              <span className="black" />
-              <span className="white" />
-              <span className="black" />
-              <span className="black" />
-              <span className="black" />
-              <span className="white" />
-              <span className="black" />
-              <span className="white" />
-=======
-            <Link to="/" className="navbar-item" title="R">
-              <img src={logo} alt="R" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
+              <span className="white areaA" />
+              <span className="black areaB" />
+              <span className="white areaC" />
+              <span className="black areaD" />
+              <span className="black areaE" />
+              <span className="black areaF" />
+              <span className="white areaG" />
+              <span className="black areaH" />
+              <span className="white areaI" />
             </div>
           </div>
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-<<<<<<< HEAD
             <div className="nav">
               <Link className="navbar-item" to="/about">
                 About
-=======
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                Works
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
               </Link>
               <Link className="navbar-item" to="/products">
                 Products
@@ -107,30 +83,18 @@ const Navbar = class extends React.Component {
                 Form Examples
               </Link>
             </div>
-<<<<<<< HEAD
             <div className="navbar-end has-text-centered">
-=======
-            {/* <div className="navbar-end has-text-centered">
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
               <a
                 className="navbar-item"
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-<<<<<<< HEAD
                 {/* <span className="icon">
                   <img src={github} alt="Github" />
                 </span> */}
               </a>
             </div>
-=======
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div> */}
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
           </div>
         </div>
       </nav>

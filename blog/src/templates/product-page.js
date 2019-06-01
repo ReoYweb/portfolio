@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
@@ -7,16 +6,6 @@ import Features from '../components/Features';
 import Testimonials from '../components/Testimonials';
 import Pricing from '../components/Pricing';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
-=======
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import Testimonials from '../components/Testimonials'
-import Pricing from '../components/Pricing'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
 
 export const ProductPageTemplate = ({
   image,
@@ -27,11 +16,7 @@ export const ProductPageTemplate = ({
   main,
   testimonials,
   fullImage,
-<<<<<<< HEAD
   pricing
-=======
-  pricing,
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
 }) => (
   <div className="content">
     <div
@@ -39,11 +24,7 @@ export const ProductPageTemplate = ({
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-<<<<<<< HEAD
         })`
-=======
-        })`,
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
       }}
     >
       <h2
@@ -52,11 +33,7 @@ export const ProductPageTemplate = ({
           boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
           backgroundColor: '#f40',
           color: 'white',
-<<<<<<< HEAD
           padding: '1rem'
-=======
-          padding: '1rem',
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
         }}
       >
         {title}
@@ -111,11 +88,7 @@ export const ProductPageTemplate = ({
                     fullImage.childImageSharp
                       ? fullImage.childImageSharp.fluid.src
                       : fullImage
-<<<<<<< HEAD
                   })`
-=======
-                  })`,
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
                 }}
               />
               <h2 className="has-text-weight-semibold is-size-2">
@@ -129,11 +102,7 @@ export const ProductPageTemplate = ({
       </div>
     </section>
   </div>
-<<<<<<< HEAD
 );
-=======
-)
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -141,43 +110,26 @@ ProductPageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
-<<<<<<< HEAD
     blurbs: PropTypes.array
-=======
-    blurbs: PropTypes.array,
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
   }),
   main: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-<<<<<<< HEAD
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
-=======
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
   }),
   testimonials: PropTypes.array,
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   pricing: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
-<<<<<<< HEAD
     plans: PropTypes.array
   })
 };
 
 const ProductPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-=======
-    plans: PropTypes.array,
-  }),
-}
-
-const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
 
   return (
     <Layout>
@@ -193,32 +145,18 @@ const ProductPage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </Layout>
-<<<<<<< HEAD
   );
 };
-=======
-  )
-}
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-<<<<<<< HEAD
       frontmatter: PropTypes.object
     })
   })
 };
 
 export default ProductPage;
-=======
-      frontmatter: PropTypes.object,
-    }),
-  }),
-}
-
-export default ProductPage
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
@@ -306,8 +244,4 @@ export const productPageQuery = graphql`
       }
     }
   }
-<<<<<<< HEAD
 `;
-=======
-`
->>>>>>> 193242d338e7a5d2f8b5c5c96dc3558419d2a4b5
