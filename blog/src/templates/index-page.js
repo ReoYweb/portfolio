@@ -19,7 +19,7 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="full-width-image margin-top-0"
+      className="full-width-image hero"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -31,11 +31,9 @@ export const IndexPageTemplate = ({
         <img src={hero} alt="Design create my life" className="heroImage" />
       </h1>
 
-      <div>
-        <Link to="/">
-          <img src={scroll} className="scroll" alt="scroll" />
-        </Link>
-      </div>
+      <Link to="/">
+        <img src={scroll} className="scroll" alt="scroll" />
+      </Link>
     </div>
     <section className="mainContent">
       <h2 className="intro">{subheading}</h2>

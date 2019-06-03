@@ -39,7 +39,6 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="cursor cursor-follower" />
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-itee" title="Logo">
@@ -63,15 +62,15 @@ const Navbar = class extends React.Component {
             </div>
           </div>
           <div
-            id="navMenu"
+            id="nav"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="nav">
+            <div className="nav-inner">
               <Link className="navbar-item" to="/about">
-                About
+                Work
               </Link>
               <Link className="navbar-item" to="/products">
-                Products
+                Photos
               </Link>
               <Link className="navbar-item" to="/blog">
                 Blog
@@ -83,18 +82,18 @@ const Navbar = class extends React.Component {
                 Form Examples
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
+            {/* <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* <span className="icon">
+                <span className="icon">
                   <img src={github} alt="Github" />
-                </span> */}
+                </span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
