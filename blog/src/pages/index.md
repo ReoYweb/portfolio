@@ -6,8 +6,12 @@ heading:
 subheading: Hello, I am Reo Yoshioka and UI/UX designer. I design and build cool design like below.
 mainpitch:
   title: Client works
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
+client:
+  name: Mike Smooth
+  genru: Dj player |
+  date: Feb 2019 |
+  project: School project |
+  image: /img/coffee.png
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin

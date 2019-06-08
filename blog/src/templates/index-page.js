@@ -14,7 +14,7 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   mainpitch,
-  description,
+  client,
   intro
 }) => (
   <div>
@@ -35,23 +35,37 @@ export const IndexPageTemplate = ({
         <img src={scroll} className="scroll" alt="scroll" />
       </Link>
     </div>
-    <section className="mainContent">
-      <h2 className="intro">{subheading}</h2>
-      <div className="content">
-        <div className="tile">
-          <h3 className="sectionTitle">{mainpitch.title}</h3>
+    <main className="contentOuter">
+      <section className="introduce">
+        <h1 className="introduce__title">{subheading}</h1>
+        <div className="content">
+          <div className="title">
+            <h2 className="sectionTitle">{mainpitch.title}</h2>
+          </div>
         </div>
-        <div className="tile">
-          <h3 className="subtitle">{mainpitch.description}</h3>
-        </div>
-      </div>
-      <div className="columns">
+      </section>
+
+      <section className="work">
+        <Link to="/">
+          <div className="client">
+            <h2 className="client__title">{client.name}</h2>
+            <ul className="client__list">
+              <li>{client.genru}</li>
+              <li>{client.date}</li>
+              <li>{client.project}</li>
+            </ul>
+          </div>
+        </Link>
+      </section>
+
+      {/* <div className="columns">
         <div className="column is-12">
           <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-          <p>{description}</p>
         </div>
-      </div>
+      </div> */}
+
       <Features gridItems={intro.blurbs} />
+
       <div className="columns">
         <div className="column is-12 has-text-centered">
           <Link className="btn" to="/products">
@@ -68,7 +82,7 @@ export const IndexPageTemplate = ({
           </Link>
         </div>
       </div>
-    </section>
+    </main>
   </div>
 );
 
@@ -78,7 +92,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
+  client: PropTypes.object,
   intro: PropTypes.shape({
     blurbs: PropTypes.array
   })
@@ -95,7 +109,7 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
+        client={frontmatter.client}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -128,9 +142,20 @@ export const pageQuery = graphql`
         subheading
         mainpitch {
           title
-          description
         }
-        description
+        client {
+          name
+          genru
+          date
+          project
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
         intro {
           blurbs {
             image {
