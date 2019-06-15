@@ -7,14 +7,14 @@ import scroll from '../img/scroll.svg';
 import Layout from '../components/Layout';
 import Features from '../components/Features';
 import BlogRoll from '../components/BlogRoll';
+import Photo from '../components/Photo';
 
 export const IndexPageTemplate = ({
   image,
-  title,
   heading,
-  subheading,
   mainpitch,
   client,
+  photo,
   intro
 }) => (
   <div>
@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
     </div>
     <main className="contentOuter">
       <section className="introduce">
-        <h1 className="introduce__title">{subheading}</h1>
+        {/* <h1 className="introduce__title">{subheading}</h1> */}
         <div className="content">
           <div className="title">
             <h2 className="sectionTitle">{mainpitch.title}</h2>
@@ -50,29 +50,71 @@ export const IndexPageTemplate = ({
           <div className="client">
             <h2 className="client__title">{client.name}</h2>
             <ul className="client__list">
-              <li>{client.genru}</li>
-              <li>{client.date}</li>
-              <li>{client.project}</li>
+              <li>
+                {client.genru}
+                <span>|</span>
+              </li>
+              <li>
+                {client.date}
+                <span>|</span>
+              </li>
+              <li>
+                {client.project}
+                <span>|</span>
+              </li>
+            </ul>
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="client">
+            <h2 className="client__title">{client.name}</h2>
+            <ul className="client__list">
+              <li>
+                {client.genru}
+                <span>|</span>
+              </li>
+              <li>
+                {client.date}
+                <span>|</span>
+              </li>
+              <li>
+                {client.project}
+                <span>|</span>
+              </li>
+            </ul>
+          </div>
+        </Link>
+        <Link to="/">
+          <div className="client">
+            <h2 className="client__title">{client.name}</h2>
+            <ul className="client__list">
+              <li>
+                {client.genru}
+                <span>|</span>
+              </li>
+              <li>
+                {client.date}
+                <span>|</span>
+              </li>
+              <li>
+                {client.project}
+                <span>|</span>
+              </li>
             </ul>
           </div>
         </Link>
       </section>
 
-      {/* <div className="columns">
+      <Photo photoItems={photo.inner} />
+
+      <div className="columns">
         <div className="column is-12">
           <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
         </div>
-      </div> */}
-
-      <Features gridItems={intro.blurbs} />
-
-      <div className="columns">
-        <div className="column is-12 has-text-centered">
-          <Link className="btn" to="/products">
-            See all products
-          </Link>
-        </div>
       </div>
+
+      {/* <Features gridItems={intro.blurbs} /> */}
+
       <div className="column is-12">
         <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
         <BlogRoll />
@@ -93,6 +135,9 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   client: PropTypes.object,
+  photo: PropTypes.shape({
+    inner: PropTypes.array
+  }),
   intro: PropTypes.shape({
     blurbs: PropTypes.array
   })
@@ -110,6 +155,7 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         client={frontmatter.client}
+        photo={frontmatter.photo}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -156,11 +202,25 @@ export const pageQuery = graphql`
             }
           }
         }
+        photo {
+          inner {
+            title
+            jp
+            en
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1000, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
         intro {
           blurbs {
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 1000, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }

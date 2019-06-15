@@ -7,13 +7,7 @@ const FeatureGrid = ({ gridItems }) => (
     {gridItems.map(item => (
       <div key={item.text} className="column is-6">
         <section className="section">
-          <div
-            style={{
-              width: '100px',
-              display: 'inline-block',
-              zIndex: 0
-            }}
-          >
+          <div>
             <PreviewCompatibleImage imageInfo={item} />
           </div>
           <p>{item.text}</p>

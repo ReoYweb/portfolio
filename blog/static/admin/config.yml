@@ -67,6 +67,26 @@ collections:
                 ],
             }
           - {
+              label: Photo,
+              name: photo,
+              widget: object,
+              fields:
+                [
+                  {
+                    label: Inner,
+                    name: inner,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Title, name: title, widget: string },
+                        { label: Jp, name: jp, widget: string },
+                        { label: En, name: en, widget: string },
+                        { label: Image, name: image, widget: image },
+                      ],
+                  },
+                ],
+            }
+          - {
               label: Intro,
               name: intro,
               widget: object,
