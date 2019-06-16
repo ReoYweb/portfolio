@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 // import github from '../img/github-icon.svg';
 import logo from '../img/logo.svg';
+import menu from '../img/menu1.jpg';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -61,27 +62,38 @@ const Navbar = class extends React.Component {
               <span className="white areaI" />
             </div>
           </div>
-          <div
-            id="nav"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="nav-inner">
-              <Link className="navbar-item" to="/about">
-                Work
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Photos
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
+          <div id="nav" className={` ${this.state.navBarActiveClass}`}>
+            <img src={logo} className="menu__logo" />
+            <div class="navleft">
+              <img src={menu} />
             </div>
+            <div class="navright">
+              <div className="nav-inner">
+                <Link className="navbar-item" to="/">
+                  Home
+                </Link>
+                <Link className="navbar-item" to="/about">
+                  Work
+                </Link>
+                <Link className="navbar-item" to="/products">
+                  Photos
+                </Link>
+                <Link className="navbar-item" to="/blog">
+                  Blog
+                </Link>
+                <Link className="navbar-item" to="#footer">
+                  Contact
+                </Link>
+              </div>
+            </div>
+            <p className="nav__text">
+              Hello, I am Reo Yoshioka and UI/UX designer. I design and build
+              cool websites like below. I have worked as a web designer for 2
+              years in Japan and then learned web design at Vanarts institute of
+              media arts in Vancouver, Canada. I am obsessed with UI/UX design
+              and web development as well and always think of how user
+              experience become good.
+            </p>
             {/* <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"

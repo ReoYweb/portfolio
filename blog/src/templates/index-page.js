@@ -5,8 +5,8 @@ import { Link, graphql } from 'gatsby';
 import hero from '../img/title.svg';
 import scroll from '../img/scroll.svg';
 import Layout from '../components/Layout';
-import Features from '../components/Features';
-import BlogRoll from '../components/BlogRoll';
+// import Features from '../components/Features';
+// import BlogRoll from '../components/BlogRoll';
 import Photo from '../components/Photo';
 
 export const IndexPageTemplate = ({
@@ -211,7 +211,7 @@ export const pageQuery = graphql`
             imagetext2
             image {
               childImageSharp {
-                fluid(maxWidth: 1000, quality: 100) {
+                fluid(maxWidth: 500, quality: 100) {
                   ...GatsbyImageSharpFluid
                 }
               }
