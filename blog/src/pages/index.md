@@ -17,6 +17,8 @@ photo:
     - title: Photos
       jp: 「命」
       en: Life
+      imagetext1: Reo Yoshioka photos works
+      imagetext2: Life is always beautiful
       image: /img/life.jpg
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their

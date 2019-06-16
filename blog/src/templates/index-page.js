@@ -115,7 +115,7 @@ export const IndexPageTemplate = ({
 
       {/* <Features gridItems={intro.blurbs} /> */}
 
-      <div className="column is-12">
+      {/* <div className="column is-12">
         <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
         <BlogRoll />
         <div className="column is-12 has-text-centered">
@@ -123,7 +123,7 @@ export const IndexPageTemplate = ({
             Read more
           </Link>
         </div>
-      </div>
+      </div> */}
     </main>
   </div>
 );
@@ -207,6 +207,8 @@ export const pageQuery = graphql`
             title
             jp
             en
+            imagetext1
+            imagetext2
             image {
               childImageSharp {
                 fluid(maxWidth: 1000, quality: 100) {
