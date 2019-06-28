@@ -92,16 +92,12 @@
     position: absolute;
     bottom: 21%;
     left: -10%;
-    font-style: italic;
     font-size: 0.8rem;
-    font-weight: bold;
   }
   &__text2 {
-    font-style: italic;
     font-size: 0.8rem;
     display: inline-block;
     padding: 2rem 0;
-    font-weight: bold;
   }
   .photoinner {
     margin-top: 200px;
@@ -180,6 +176,7 @@
   align-self: center;
   writing-mode: vertical-lr;
   margin-top: 30%;
+  font-size: 0.8rem;
 }
 
 .footer .areaE {

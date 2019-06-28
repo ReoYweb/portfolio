@@ -26,7 +26,7 @@ const Footer = class extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={github} alt="Github" style={{ width: '1.2em' }} />
+            <img src={github} alt="Github" style={{ width: '1.0em' }} />
           </a>
         </div>
         <div className="social areaH">
@@ -36,7 +36,7 @@ const Footer = class extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={facebook} alt="Facebook" style={{ width: '1.2em' }} />
+            <img src={facebook} alt="Facebook" style={{ width: '1.0em' }} />
           </a>
           <a
             title="twitter"
@@ -57,7 +57,7 @@ const Footer = class extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={instagram} alt="Instagram" style={{ width: '1.2em' }} />
+            <img src={instagram} alt="Instagram" style={{ width: '1.0em' }} />
           </a>
           <a
             title="mail"
@@ -65,7 +65,7 @@ const Footer = class extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={mail} alt="mail" style={{ width: '1.2em' }} />
+            <img src={mail} alt="mail" style={{ width: '1.0em' }} />
           </a>
         </div>
         <Link to="/" className="areaI">
