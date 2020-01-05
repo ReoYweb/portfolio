@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 // import Features from '../components/Features';
 // import BlogRoll from '../components/BlogRoll';
 import Photo from '../components/Photo';
+import Footer from '../components/Footer';
 
 export const IndexPageTemplate = ({
   image,
@@ -46,7 +47,7 @@ export const IndexPageTemplate = ({
       </section>
 
       <section className="work">
-        <Link to="/">
+        <a href="http://reoyoshioka.com/mikesmooth/" target="_blank">
           <div className="client">
             <h2 className="client__title">{client.name}</h2>
             <ul className="client__list">
@@ -64,8 +65,8 @@ export const IndexPageTemplate = ({
               </li>
             </ul>
           </div>
-        </Link>
-        <Link to="/">
+        </a>
+        <a href="http://reoyoshioka.com/mikesmooth/" target="_blank">
           <div className="client">
             <h2 className="client__title">{client.name}</h2>
             <ul className="client__list">
@@ -83,8 +84,8 @@ export const IndexPageTemplate = ({
               </li>
             </ul>
           </div>
-        </Link>
-        <Link to="/">
+        </a>
+        <a href="http://reoyoshioka.com/mikesmooth/" target="_blank">
           <div className="client">
             <h2 className="client__title">{client.name}</h2>
             <ul className="client__list">
@@ -102,7 +103,7 @@ export const IndexPageTemplate = ({
               </li>
             </ul>
           </div>
-        </Link>
+        </a>
       </section>
 
       <Photo photoItems={photo.inner} />
@@ -125,6 +126,7 @@ export const IndexPageTemplate = ({
         </div>
       </div> */}
     </main>
+    <Footer />
   </div>
 );
 

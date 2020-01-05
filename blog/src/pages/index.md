@@ -5,7 +5,7 @@ image: /img/title.svg
 heading:
 subheading: Hello, I am Reo Yoshioka and UI/UX designer. I design and build cool design like below.
 mainpitch:
-  title: Client works
+  title: Latest works
 client:
   name: Mike Smooth
   genru: Dj player
@@ -15,10 +15,10 @@ client:
 photo:
   inner:
     - title: Photos
-      jp: 「命」
-      en: Life
+      jp: 「自然」
+      en: Neture
       imagetext1: Reo Yoshioka photos works
-      imagetext2: Life is always beautiful
+      imagetext2: Neture is always beautiful
       image: /img/life.jpg
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their

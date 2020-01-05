@@ -1,5 +1,4 @@
 .navbar {
-  position: fixed;
 }
 
 .burger {
@@ -39,6 +38,24 @@
   visibility: hidden;
 }
 
+.nav-inner {
+  padding: 0 1rem 0 0;
+  position: absolute;
+  right: 8%;
+  top: 8%;
+  display: flex;
+  .navbar-item {
+    color: #1a1a1a;
+    display: block;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0rem 2rem;
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+}
+
 #nav.is-active {
   background: #fff;
   width: 92%;
@@ -76,31 +93,19 @@
 .navright {
   grid-row: 1 / span 1;
   align-self: flex-end;
-  .nav-inner {
-    width: 80%;
-    display: flex;
-    align-self: center;
-    .navbar-item {
-      color: #1a1a1a;
-      display: block;
-      text-decoration: none;
-      font-size: 0.9rem;
-      margin: 0rem 2rem;
-      &:nth-child(1) {
-        margin-left: 0;
-      }
-    }
-  }
 }
 
 .nav__text {
   grid-row: 2 / span 2;
   align-self: flex-end;
   font-size: 0.8rem;
-  line-height: 2rem;
+  line-height: 1.4rem;
   color: #737373;
   width: 89%;
-  margin: 0 0 50px 0;
+  margin: 0 0 14px 0;
+  &:first-child {
+    margin-top: 100px;
+  }
 }
 
 @keyframes dot {

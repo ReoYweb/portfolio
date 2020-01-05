@@ -107,6 +107,7 @@ body {
   line-height: 1;
   padding: 4%;
   font-family: 'Noto Sans', sans-serif;
+  cursor: none;
 }
 ol,
 ul {
@@ -133,14 +134,8 @@ a {
 }
 
 * {
-  cursor: url(../img/cursol.svg) 25 25, pointer;
+  cursor: url(../img/cursor.svg) 25 25, pointer;
 }
-
-@keyframes cursor {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: rotate(1.5);
-  }
-}
+// * {
+//   cursor: auto;
+// }
